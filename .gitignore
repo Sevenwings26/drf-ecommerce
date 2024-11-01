@@ -1,0 +1,5 @@
+.env
+vir/
+schema.yml
+**__pycache__/
+db.sqlite
