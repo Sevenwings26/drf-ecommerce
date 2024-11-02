@@ -158,6 +158,7 @@ REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
+# documentation settings
 # meta data
 SPECTACULAR_SETTINGS = {
     "TITLE": "Market Prime API",
@@ -166,3 +167,13 @@ SPECTACULAR_SETTINGS = {
     # "SERVE_INCLUDE_SCHEMA": False,
     # OTHER SETTINGS
 }
+
+# email system
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = ""
+EMAIL_PORT = ""
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
+DEFAULT_FROM_EMAIL = ""

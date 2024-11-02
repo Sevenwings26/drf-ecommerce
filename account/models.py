@@ -23,20 +23,6 @@ class UserManager(BaseUserManager):
         return self.create_user(email, password, **extra_fields)
 
 
-# class CustomUser(AbstractBaseUser, PermissionsMixin):
-#     email = models.EmailField(unique=True)
-#     is_active = models.BooleanField(default=True)
-#     is_staff = models.BooleanField(default=False)
-
-#     USERNAME_FIELD = "email"
-#     REQUIRED_FIELDS = []
-
-#     objects = UserManager()
-
-#     def __str__(self):
-#         return self.email
-
-
 class CustomUser(AbstractBaseUser, PermissionsMixin):
     GENDER_CHOICES = [
         ("male", "Male"),
@@ -82,6 +68,8 @@ class VendorProfile(models.Model):
     business_name = models.CharField(max_length=100)
     business_address = models.CharField(max_length=255)
 
+
+# add staff profile - class A
 
 # from rest_framework.permissions import BasePermission
 

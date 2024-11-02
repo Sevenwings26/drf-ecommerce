@@ -16,6 +16,7 @@ django-mptt
 drf-spectacular
 djangorestframework-simplejwt
 django-cors-headers
+pillow
 
 # VS Code Extension(s)
 
